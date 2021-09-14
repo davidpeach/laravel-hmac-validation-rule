@@ -28,7 +28,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "DavidPeach\\LaravelHmacValidatorRule\\HmacValidatorRuleServiceProvider"
+                "DavidPeach\\LaravelHmacValidationRule\\HmacValidationRuleServiceProvider"
             ]
         }
     }
