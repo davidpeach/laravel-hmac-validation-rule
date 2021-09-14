@@ -22,7 +22,7 @@ class Hmac implements Rule
         $correctHash = hash_hmac(
             'sha256',
             json_encode($this->dataToHash),
-            config('hmac.secret')
+            config('hmac_validator.secret')
         );
 
         return $value === $correctHash;

@@ -13,7 +13,7 @@ class HmacTest extends TestCase
     {
         parent::setUp();
 
-        Config::set('hmac.secret', 'a-test-secret');
+        Config::set('hmac_validator.secret', 'a-test-secret');
     }
 
     /**
