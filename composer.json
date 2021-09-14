@@ -1,0 +1,33 @@
+{
+    "name": "davidpeach/laravel-hmac-validator-rule",
+    "description": "A rule class for validating a hmac signature",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "orchestra/testbench": "^6.21"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "DavidPeach\\LaravelHmacValidatorRule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DavidPeach\\LaravelHmacValidatorRule\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "David Peach",
+            "email": "mail@davidpeach.co.uk"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DavidPeach\\LaravelHmacValidatorRule\\HmacValidatorRuleServiceProvider"
+            ]
+        }
+    }
+}
