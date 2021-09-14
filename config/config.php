@@ -12,6 +12,6 @@ return [
     | in this file.
     |
     */
-    'secret' => env('HMAC_VALIDATOR_SECRET', ''),
+    'secret' => env('HMAC_VALIDATION_SECRET', ''),
 
 ];

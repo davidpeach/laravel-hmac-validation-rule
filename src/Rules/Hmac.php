@@ -1,6 +1,6 @@
 <?php
 
-namespace DavidPeach\LaravelHmacValidatorRule\Rules;
+namespace DavidPeach\LaravelHmacValidationRule\Rules;
 
 use Illuminate\Contracts\Validation\Rule;
 
@@ -22,7 +22,7 @@ class Hmac implements Rule
         $correctHash = hash_hmac(
             'sha256',
             json_encode($this->dataToHash),
-            config('hmac_validator.secret')
+            config('hmac_validation.secret')
         );
 
         return $value === $correctHash;

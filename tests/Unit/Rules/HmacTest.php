@@ -1,9 +1,9 @@
 <?php
 
-namespace DavidPeach\LaravelHmacValidatorRule\Tests\Unit\Rules;
+namespace DavidPeach\LaravelHmacValidationRule\Tests\Unit\Rules;
 
-use DavidPeach\LaravelHmacValidatorRule\Rules\Hmac;
-use DavidPeach\LaravelHmacValidatorRule\Tests\TestCase;
+use DavidPeach\LaravelHmacValidationRule\Rules\Hmac;
+use DavidPeach\LaravelHmacValidationRule\Tests\TestCase;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 
@@ -13,7 +13,7 @@ class HmacTest extends TestCase
     {
         parent::setUp();
 
-        Config::set('hmac_validator.secret', 'a-test-secret');
+        Config::set('hmac_validation.secret', 'a-test-secret');
     }
 
     /**

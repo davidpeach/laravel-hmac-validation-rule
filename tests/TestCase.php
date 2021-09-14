@@ -1,8 +1,8 @@
 <?php
 
-namespace DavidPeach\LaravelHmacValidatorRule\Tests;
+namespace DavidPeach\LaravelHmacValidationRule\Tests;
 
-use DavidPeach\LaravelHmacValidatorRule\HmacValidatorRuleServiceProvider;
+use DavidPeach\LaravelHmacValidationRule\HmacValidationRuleServiceProvider;
 use \Orchestra\Testbench\TestCase as TC;
 
 class TestCase extends TC
@@ -13,10 +13,10 @@ class TestCase extends TC
         // additional setup
     }
 
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
-            HmacValidatorRuleServiceProvider::class,
+            HmacValidationRuleServiceProvider::class,
         ];
     }
 
