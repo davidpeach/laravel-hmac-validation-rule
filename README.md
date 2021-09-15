@@ -3,6 +3,12 @@
 A [Laravel Rule Object](https://laravel.com/docs/8.x/validation#using-rule-objects) for checking an Hmac hash based 
 on any of your request key / value pairs.
 
+## Installation
+
+```
+composer require davidpeach/laravel-hmac-validation-rule:^1.0
+```
+
 ## Why
 
 Sometimes you may want some extra assurance that the data that arrives at its intended destination is the exact 
